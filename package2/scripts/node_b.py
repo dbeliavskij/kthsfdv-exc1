@@ -4,7 +4,8 @@ import rospy
 from std_msgs.msg import UInt16
 from std_msgs.msg import Float32
 
-rospy.init_node('node_b', anonymous=True)
+rospy.init_node('node_b', anonymous = True)
+
 
 def callback(msg):
     out = Float32()
@@ -13,6 +14,6 @@ def callback(msg):
     pub.publish(out)
 
 sub = rospy.Subscriber('/Beliavskij', UInt16, callback)
-pub = rospy.Publisher('/kthfs/result', Float32, queue_size=10)
+pub = rospy.Publisher('/kthfs/result', Float32, queue_size = 10)
 
 rospy.spin()
