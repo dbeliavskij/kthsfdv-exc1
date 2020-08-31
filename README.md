@@ -1,6 +1,4 @@
 # Exercise 1 of KTH Formula Student - Driverless, Software Skill Training
-@fedetask
-@Javiercerna
 
 ## Visualization
 
